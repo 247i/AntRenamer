@@ -7,8 +7,8 @@
     <tbTabs Rev="2000" Visible="1" DockedTo="tbdMain" LastDock="tbdMain" DockRow="0" DockPos="0" FloatLeft="0" FloatTop="0" FloatRightX="0" DisplayMode="0"/>
     <tbFiles Rev="2000" Visible="1" DockedTo="tbdMain" LastDock="tbdMain" DockRow="1" DockPos="0" FloatLeft="0" FloatTop="0" FloatRightX="0" DisplayMode="0"/>
     <tbActions Rev="2000" Visible="0" DockedTo="tbdMain" LastDock="tbdMain" DockRow="1" DockPos="625" FloatLeft="0" FloatTop="0" FloatRightX="0" DisplayMode="0"/>
-    <tbLog Rev="2000" Visible="1" DockedTo="tbdMain" LastDock="tbdMain" DockRow="1" DockPos="3" FloatLeft="0" FloatTop="0" FloatRightX="0" DisplayMode="0"/>
-    <tbMove Rev="2000" Visible="0" DockedTo="tbdMain" LastDock="tbdMain" DockRow="1" DockPos="612" FloatLeft="0" FloatTop="0" FloatRightX="0" DisplayMode="0"/>
+    <tbLog Rev="2000" Visible="0" DockedTo="tbdMain" LastDock="tbdMain" DockRow="1" DockPos="3" FloatLeft="0" FloatTop="0" FloatRightX="0" DisplayMode="0"/>
+    <tbMove Rev="2000" Visible="1" DockedTo="tbdMain" LastDock="tbdMain" DockRow="1" DockPos="612" FloatLeft="0" FloatTop="0" FloatRightX="0" DisplayMode="0"/>
    </Toolbars>
    <FilesListColumns>
     <Column Nr="0" Position="0" Width="200" Visible="-1"/>
