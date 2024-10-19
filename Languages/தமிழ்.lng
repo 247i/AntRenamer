@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-Icon=Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAIAAAAAzCwAAMwsAABAAAAAQAAAAAAAAAFAAAABmAAAAmAAAAK4AAACYMgAA/QAyAP9mMwAAAJgAAAC0AAAA/QBlZf8AmZmZAP//mQD//8sA////AP//////////AAAAAAAAAAAJUSLIjCIVkAHqQ+quNK1gAj6j6q4642ACM+rqrq4zYAzu7uqu7u7gCKqqqqqqqrAIqqqqqqqqsAzu7uqu7u7gAjTq6q6uM2ACPqPqrjrjYAHqQ+quM65gCXZm675mZrAAAAAAAAAAAP//////////
+Icon=Qk32AAAAAAAAAHYAAAAoAAAAEAAAABAAAAABAAQAAAAAAAAAAADDDgAAww4AAAAAAAAAAAAA////AAAAAAAAZf0AM5j/AAAyzACqqqoAzMzMAFQAAABmAAAA7u7uAMxmZgAAMgAAAEQAAAB2AAAAAAAAAAAAAAAAAAAAAAAAEREREREREREbu7u7u7u7wRvMzMzMzMzRG8zMzMzMzNEbzMzMzMzM0RVmZmd2ZmaRFWZmeqdmZpEVZmZ6qGZmkRVmZmeGZmaRFCIiIiIiIjEUIiIiIiIiMRQiIiIiIiIxEjMzMzMzMzEREREREREREQAAAAAAAAAA
 Name=Tamil
 LocalName=தமிழ்
 Version=2.12
-VersionFormat=2.12
+VersionFormat=2.13
 Comments=பிற மொழிபெயர்ப்புகளுக்கான குறிப்பு / மாதிரி கோப்பு.|நீங்கள் நிரலை ஆங்கிலத்தில் பயன்படுத்த விரும்பினால், அதை மாற்ற விரும்பவில்லை எனில், "ஆங்கிலம் (இயல்புநிலை)" ஐத் தேர்ந்தெடுக்க பரிந்துரைக்கப்படுகிறது.
 Authors=தமிழ்நேர குழு|https://TamilNeram.github.io
+-->
+<!--
+Note for translators: If you want to complete this translation, simple search for the text <n/> that indicate new lines that should be translated.
+Replace the English text by the correct translation, and once done you can send the file to antrenamer-contact@antp.be to have it included in the next update.
 -->
 <Application>
   <MainForm>
@@ -32,6 +36,8 @@ Authors=தமிழ்நேர குழு|https://TamilNeram.github.io
     <ActionFromListOpen Caption="திற ..." Hint="திற |ஒரு கோப்பிலிருந்து ஒரு பட்டியலை ஏற்றவும்"/>
     <ActionFromListSave Caption="சேமி ..." Hint="சேமி |பட்டியலை ஒரு கோப்பில் சேமிக்கவும்"/>
     <ActionMultistrReplClear Caption="கட்டத்தை அழி" Hint="சரம் கட்டத்தை அழி"/>
+<n/>    <ActionMultistrReplCopy Caption="Copy/Export" Hint="|Copy the whole string table to the clipboard as tab-delimited text for importing in Excel or text editors"/>
+<n/>    <ActionMultistrReplPaste Caption="Paste/Import" Hint="|Paste the whole string table from the clipboard as tab-delimited text, for importing from Excel or text editors"/>
     <ActionMultistrReplSave Caption="சேமி" Hint="|மேலே எழுதப்பட்ட பெயரில் தற்போதைய தொகுப்பை சேமிக்கவும்"/>
     <ActionMultistrReplDelete Caption="நீக்கு" Hint="|தற்போது தேர்ந்தெடுக்கப்பட்ட தொகுப்பு பெயரை நீக்கு"/>
     <ActionMoveUp Caption="மேலே" Hint="மேலே நகர்த்தவும் | தேர்ந்தெடுக்கப்பட்ட உருப்படிகளை மேலே நகர்த்தவும்"/>
@@ -149,6 +155,8 @@ Authors=தமிழ்நேர குழு|https://TamilNeram.github.io
     <lblDTWhich Caption="பயன்படுத்த வேண்டிய தேதி:"/>
     <rbtDTWhichCreation Caption="உருவாக்கம்"/>
     <rbtDTWhichModif Caption="கடைசி மாற்றம்"/>
+<n/>    <lblDTOffset Caption="Offset:"/>
+<n/>    <lblDTOffsetSec Caption="seconds"/>
     <lblDTNotes Caption="குறிப்புகள்:"/>
     <lblDTNotes2>
       <Lines>
@@ -202,6 +210,8 @@ If m or mm immediately follows h or hh, minute rather than month is used]]>
     <lblRegexpRepl Caption="New name:"/>
     <lblRegexpNotes Caption="Notes:&lt;BR&gt;- \ character can be used to escape special characters (like $ and others), use a \\ for a simple \ in new name (if you want to target the new name to another folder)&lt;BR&gt;- Use ^ to indicate the beginning of the name and $ for the end of name&lt;BR&gt;- The new name must contain $1, $2, etc. to specify where found characters will come&lt;BR&gt;see &lt;LINK&gt;Help&lt;/LINK&gt; for more information on regular expressions"/>
     <lblExifMask Caption="Mask:"/>
+<n/>    <lblExifOffset Caption="Offset:"/>
+<n/>    <lblExifOffsetSec Caption="seconds"/>
     <lblExifNotes Caption="Notes:&lt;BR&gt;- %name% = Original file name (without extension)&lt;BR&gt;- %ext% = Original extension (including the dot)&lt;BR&gt;- %datetimeoriginal% or %datetime% = Original date and time of the picture&lt;BR&gt;- %orientation% = Picture orientation&lt;BR&gt;- %flash% = Flash was on or off&lt;BR&gt;- %% = % character&lt;BR&gt;see &lt;LINK&gt;Help&lt;/LINK&gt; for more information and for complete list of EXIF tags"/>
     <lstLog Hint="|Log"/>
     <VarMessages>
@@ -237,6 +247,7 @@ If m or mm immediately follows h or hh, minute rather than month is used]]>
       <Item Name="stradCharDel" Value="%d எழுத்துக்களை நீக்கு"/>
       <Item Name="stradCharDelPos" Value=" நிலையில் %d"/>
       <Item Name="stradCharDelStr" Value="&#34;%s&#34;சரம் பிறகு"/>
+<n/>      <Item Name="stradCharDelStr2" Value=" before the string &#34;%s&#34;"/>
       <Item Name="stradEnum" Value="&#34;%s&#34; வரை %d இலிருந்து %d முதல் %dஉடன் ஒரு கணக்கீட்டை உருவாக்கவும்"/>
       <Item Name="stradMP3" Value="முகமூடியின் அடிப்படையில் எம்பி3 குறிச்சொற்களைக் கொண்டு பெயர்களை உருவாக்கவும் &#34;%s&#34;"/>
       <Item Name="stradMP3TwoDigit" Value=", தேவைப்பட்டால் ட்ராக் எண்ணில் '0' ஐ செருகவும்"/>
@@ -247,6 +258,7 @@ If m or mm immediately follows h or hh, minute rather than month is used]]>
       <Item Name="stradDateTimeCreat" Value=" உருவாக்கும் தேதியைப் பயன்படுத்தி"/>
       <Item Name="stradDateTimeModif" Value=" கடைசி மாற்ற தேதியைப் பயன்படுத்தி"/>
       <Item Name="stradDateTimeSuffix" Value=", தேவைப்பட்டால் பின்னொட்டைச் சேர்க்கவும்"/>
+<n/>      <Item Name="stradDateTimeOffset" Value=" with %d s offset"/>
       <Item Name="stradRandom" Value="முகமூடியைப் பயன்படுத்தி சீரற்ற பெயர்களை உருவாக்கவும் &#34;%s&#34;"/>
       <Item Name="stradRandomNumbers" Value=", எண்களுடன்"/>
       <Item Name="stradRandomTick" Value=", விண்டோஸின் டிக் கவுண்டரைப் பயன்படுத்தி"/>
@@ -264,6 +276,7 @@ If m or mm immediately follows h or hh, minute rather than month is used]]>
       <Item Name="stradExif" Value="முகமூடியின் அடிப்படையில் EXIF ​​தகவலுடன் பெயர்களை உருவாக்கவும் &#34;%s&#34;"/>
       <Item Name="straeFromListEmpty" Value="வெற்று வரி"/>
       <Item Name="straeFromListEnd" Value="பட்டியலின் முடிவு"/>
+<n/>      <Item Name="straeExifNoInfo" Value="No EXIF info found"/>
       <Item Name="strfsNotRenamed" Value="%s மறுபெயரிடப்படவில்லை : %s"/>
       <Item Name="strfsRenamed" Value="%s - %sஎன மறுபெயரிடப்பட்டது "/>
       <Item Name="strfsReverted" Value="%s முந்தைய பெயருக்கு மாற்றப்பட்டது %s"/>
@@ -310,7 +323,7 @@ If m or mm immediately follows h or hh, minute rather than month is used]]>
     <tshDisplay Caption="காட்சி"/>
     <tshAdding Caption="கோப்புகள் &#38;&#38; கோப்புறைகள்"/>
     <tshProcessing Caption="செயலாக்கம்"/>
-<n/>    <tshEvents Caption="நிகழ்வுகள்"/>
+    <tshEvents Caption="நிகழ்வுகள்"/>
     <tshLanguage Caption="மொழி"/>
     <lbhLists Caption="பட்டியல்கள்"/>
     <cbxRealtimeUpdate Caption="கோப்புகளை மறுபெயரிடும்போது நிகழ்நேர புதுப்பிப்பு"/>
@@ -323,7 +336,7 @@ If m or mm immediately follows h or hh, minute rather than month is used]]>
         <Item Index="0" Value="இயல்புநிலை விண்டோஸ் எழுத்துரு"/>
       </Items>
     </cmbForceFont>
-    <lblForceFont Caption="குறிப்பு: ஏரியல் யூனிகோட் எம்எஸ் கிடைத்தால் அது கடுமையாக பரிந்துரைக்கப்படுகிறது"/>
+<n/>    <lblForceFont Caption="Note: Noto Sans, DejaVu Sans or Arial Unicode MS is recommended if available"/>  <!-- old caption: குறிப்பு: ஏரியல் யூனிகோட் எம்எஸ் கிடைத்தால் அது கடுமையாக பரிந்துரைக்கப்படுகிறது  -->
     <lbhDropdown Caption="கீழ்தோன்றும் புலங்கள்"/>
     <lblDropdownMax Caption="வரலாற்றில் வைக்க வேண்டிய மதிப்புகளின் எண்ணிக்கை:"/>
     <cbxDropdownComplete Caption="தட்டச்சு செய்யும் போது வரலாற்று மதிப்புகளுடன் தானாக நிறைவு"/>
@@ -352,11 +365,12 @@ If m or mm immediately follows h or hh, minute rather than month is used]]>
     <lbhRenaming Caption="கோப்பு மறுபெயரிடுதல்"/>
     <cbxCopy Caption="மறுபெயரிடுவதற்கு பதிலாக நகலெடு"/>
     <cbxGenerLog Caption="பதிவை உருவாக்கு"/>
-<n/>    <lbhFoldersRules Caption="கோப்புறை விதிகள்"/>
+<n/>    <cbxDSTRelativeToFile Caption="DST offset related to file date"/> <!-- note for translators: DST = daylight saving time -->
+    <lbhFoldersRules Caption="கோப்புறை விதிகள்"/>
     <cbxForceDir Caption="கட்டாய அடைவுகள் (&#34;\&#34; பெயர்களில் காணப்பட்டால் கோப்புறைகளை உருவாக்க அனுமதிக்கிறது)"/>
     <cbxDetectAbsdir Caption="ஒரு முழுமையான பாதையாக ஒரு &#34;:\&#34; அல்லது &#34;\\&#34; ஐக் கண்டறிக (கோப்புகளை எங்கும் நகர்த்த அனுமதிக்கிறது)"/>
-<n/>    <cbxFolderExt Caption="கோப்புறைகளைப் போல நீட்டிப்பு டிலிமிட்டராக ஒரு கோப்புறை பெயரில் &#34;.&#34; கடைசியாக "/>
-<n/>    <lbhWhenStarted Caption="மறுபெயரிடும் போது தொடங்கும்"/>
+    <cbxFolderExt Caption="கோப்புறைகளைப் போல நீட்டிப்பு டிலிமிட்டராக ஒரு கோப்புறை பெயரில் &#34;.&#34; கடைசியாக "/>
+    <lbhWhenStarted Caption="மறுபெயரிடும் போது தொடங்கும்"/>
     <cbxStartSwitch Caption="இதற்கு மாறு:"/>
     <cmbStartSwitch>
       <Items>
@@ -366,7 +380,7 @@ If m or mm immediately follows h or hh, minute rather than month is used]]>
       </Items>
     </cmbStartSwitch>
     <cbxStartClearLog Caption="பதிவை அழி"/>
-<n/>    <lbhWhenFinished Caption="மறுபெயரிடும் போது"/>
+    <lbhWhenFinished Caption="மறுபெயரிடும் போது"/>
     <cbxFinishSwitch Caption="இதற்கு மாறு:"/>
     <cmbFinishSwitch>
       <Items>
