@@ -110,8 +110,8 @@ Replace the English text by the correct translation, and once done you can send 
     <lblStrReplBy Caption=" :"/>
     <cbxStrReplAll Caption="    "/>
     <cbxStrReplCase Caption="    "/>
-    <cbxStrReplExt Caption="  "/>
-    <cbxStrReplOnlyExt Caption="   "/>
+    <cbxStrReplExt Caption="      "/>
+    <cbxStrReplOnlyExt Caption="          "/>
     <lblMultstrSearch Caption=":"/>
     <lblMultstrReplBy Caption=" :"/>
     <lblMultstrReplSet Caption="  :"/>
