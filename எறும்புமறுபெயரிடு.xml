@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<AntRenamer Version="2.13.0" Date="2024-10-20">
+<AntRenamer Version="2.13.0" Date="2024-10-23">
  <Forms>
   <Main State="0" Width="998" Height="613" Left="0" Top="80" AlwaysOnTop="False" FilesSortOrder="True" FilesSortColumn="-1" ActionsListWidth="150" EnableBatch="False" EnableSample="True" LogFilterOk="True" LogFilterError="True" LogFilterNot="True">
    <Toolbars>
@@ -23,7 +23,7 @@
   </Main>
   <SelectDirectory/>
  </Forms>
- <Options Language="Tace16.lng">
+ <Options Language="Tamil.lng">
   <Display ToolbarIconSet="Windows 10 Large" RealtimeUpdate="True" ResizeColsFiles="False" ShowFilesIcons="True" ForceFont="True" FontName="TAC-Barathi" DropdownMax="20" DropdownComplete="False" DragDropNoAsk="False" LaunchFile="False">
    <DragDropOptions/>
   </Display>
