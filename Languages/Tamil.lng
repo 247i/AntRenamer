@@ -83,24 +83,24 @@ Authors=தமிழ்நேர குழு|https://TamilNeram.github.io
     <lblPreviewNew Caption="மாதிரி புதிய பெயர்:"/>
     <lstActions Hint="|செயல்களின் பட்டியல்">
       <Items>
-        <Item Index="0" Value="நீட்டிப்பை மாற்று"/>
-        <Item Index="1" Value="சரம் மாற்றுதல்"/>
-        <Item Index="2" Value="பல சரம் மாற்றீடு"/>
-        <Item Index="3" Value="சரம் செருகல்"/>
+        <Item Index="0" Value="நீட்டிப்பு மாற்று"/>
+        <Item Index="1" Value="சரம் மாற்று"/>
+        <Item Index="2" Value="பல சரம் மாற்று"/>
+        <Item Index="3" Value="சரம் செருகு"/>
         <Item Index="4" Value="சரம் நகர்த்து"/>
-        <Item Index="5" Value="எழுத்துக்கள் நீக்குதல்"/>
+        <Item Index="5" Value="எழுத்துகள் நீக்கம்"/>
         <Item Index="6" Value="எண்ணிக்கையீடு"/>
-        <Item Index="7" Value="எம்பி3 குறிச்சொல் தகவலைப் பயன்படுத்தவும்"/>
+        <Item Index="7" Value="எம்பி3 குறிச்சொல் தகவலைப் பயன்படுத்து"/>
         <Item Index="8" Value="தேதி &#38; நேரத்தைப் பயன்படுத்து"/>
         <Item Index="9" Value="சீரற்ற பெயர்கள்"/>
         <Item Index="10" Value="வழக்கை மாற்று"/>
-        <Item Index="11" Value="பட்டியலிலிருந்து பெயர்களை எடுத்துக் கொள்ளுங்கள்"/>
+        <Item Index="11" Value="பட்டியலிலிருந்து பெயர்களை எடு"/>
         <Item Index="12" Value="வழக்கமான வெளிப்பாடு"/>
         <Item Index="13" Value="கோப்பக தகவலைப் பயன்படுத்து"/>
       </Items>
     </lstActions>
-    <lblChangeExt Caption="நீட்டிப்பை மாற்று:"/>
-    <cbxChangeExtNoRepl Caption="நீட்டிப்பை மாற்ற வேண்டாம், தற்போதைய முழு பெயருடன் சேர்"/>
+    <lblChangeExt Caption="நீட்டிப்பு மாற்று:"/>
+    <cbxChangeExtNoRepl Caption="நீட்டிப்பு மாற்ற வேண்டாம், தற்போதைய முழு பெயருடன் சேர்"/>
     <lblChangeExtNotes Caption="குறிப்புகள்:&lt;br&gt;- புள்ளியைச் சேர்க்க வேண்டாம், புதிய நீட்டிப்பை உள்ளிடவும்&lt;br&gt;- நீங்கள் அதிகரித்த நீட்டிப்பை உருவாக்க விரும்பினால்&lt;LINK&gt;எண்ணிக்கையீடு&lt;/LINK&gt; செயல் பயன்படுத்து"/>
     <lblStrReplSearch Caption="தேடு:"/>
     <lblStrReplBy Caption="இதால் மாற்றவும்:"/>
