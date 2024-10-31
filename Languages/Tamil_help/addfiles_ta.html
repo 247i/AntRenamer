@@ -1,42 +1,75 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-  <title>Ant Renamer 2 Help</title>
+  <title>Ant மறுபெயரிடு 2 உதவி</title>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link rel="stylesheet" href="main.css" type="text/css" />
 </head>
 <body>
-<h1>Adding files &amp; folders</h1>
-<p>There are several ways to add files to the list:</p>
+<h1>கோப்புகள் &amp; கோப்புறைகளைச் சேர்த்தல் </h1>
+<p>பட்டியலில் கோப்புகளைச் சேர்க்க பல வழிகள் உள்ளன: </p>
 <ul>
-  <li><a href="#addfiles">"Add files" button</a> in main window</li>
-  <li><a href="#addfolders">"Add folders" button</a> in main window</li>
-  <li><a href="#dragdrop">Drag &amp; drop files</a> from Windows Explorer</li>
+  <li><a href="#addfiles"> "கோப்புகளைச் சேர்" பொத்தான் </a> பிரதான சாளரத்தில் </li>
+  <li><a href="#addfolders"> "கோப்புறைகளைச் சேர்" பொத்தான் </a> பிரதான சாளரத்தில் </li>
+  <li><a href="#dragdrop"> கோப்புகளை இழுத்து விடுங்கள் </a> Windows Explorer -இலிருந்து </li>
 </ul>
-<h2 id="addfiles">"Add files" button</h2>
-<p>When you click the <img src="img/addfiles.png" alt="Add files" /> "Add files" button a standard Windows file selection appears. This window is controlled by
-  Windows, so it works like in other programs. One thing to know is that the order of the files that will be returned by this window is not especially the order
-  that you see. First, Windows sends the file that is focused (i.e. it has a small dotted border, it is usually the last file that you selected). Then it sends
-  all the files that follow it. When it reaches the end, it jumps to the top to send remaining files.</p>
-<p>There may also be some speed problems when trying to add thousands of files. The window may take an eternity to send the filenames to the program. If this
-  is the case, use the <a href="#addfolders">"Add folders"</a> function instead.</p>
-<h2 id="addfolders">"Add folders" button</h2>
-<p>When you click the <img src="img/addfolders.png" alt="Add folders" /> "Add folders" button a window appears, allowing you to select one or several folders.
-  This window was not only designed to add folders to the list, but also their contents.</p>
-<p>A few options at the bottom of the window allow to specify what should be added to the list:<br /><img src="img/addfilesoptions.png" alt="Options for adding files" /></p>
-<p>The first one specifies if the files contained in selected folder(s) should be added or not. The second one specifies if the selected folder(s) should be added
-  or not. The third one specifies if the sub-folders of selected folder(s) have to be included too (this applies to all sub-levels, not only the first one).</p>
-<p>Currently, this window does not display network items or special devices that do not have their own drive letter (network drives that are mapped to a drive letter
-  will be displayed in the list). In the future this may be improved (at least for network items). Until then, a "Network" button allows to choose a folder from a
-  network drive. To add these, the <a href="#dragdrop">drag &amp; drop</a> may be easier than this window.</p>
-<h2 id="dragdrop">Drag &amp; drop files</h2>
-<p>You can drag &amp; drop files from Windows Explorer (and other program that are compatible with it, like Total Commander or Servant Salamander) directly to the
-  main window of Ant Renamer. This is usually a much easier way to add files than selecting them in the "Add files" window.</p>
-<p>By default, when you drop the files a window appears. It allows you to choose how you want to add the files. These options are the same than those
-  available in the <a href="#addfolders">"Add folders" window</a>. An option labelled "Do not ask again" allows to keep the select options for future drag &amp; drop,
-  so the window is not displayed again. If you check this option and want to discard it (or change the options), you can do that in the "Files &amp; Folders" page
-  of the <a href="options_en.html">Options window</a>. To bring back this window one time without changing its default behaviour, you can hold down the Ctrl or Shift key while dropping the files. This allows, for example,
-  to add a folder to the list when the default behaviour that you select is to only add files.</p>
+<h2 id="addfiles">"கோப்புகளைச் சேர்" பொத்தான் </h2>
+<p>நீங்கள் கிளிக் செய்யும் போது  <img src="img/addfiles.png" alt="கோப்புகளைச் சேர்">
+ "கோப்புகளைச் சேர்" பொத்தான் ஒரு நிலையான விண்டோஸ் கோப்பு தேர்வு 
+தோன்றும். இந்தச் சாளரம் கீழ்க்கண்டவற்றால் கட்டுப்படுத்தப்படுகிறது
+  விண்டோஸ், எனவே இது மற்ற நிரல்களைப் போலவே செயல்படுகிறது. தெரிந்து கொள்ள
+ வேண்டிய ஒரு விஷயம் என்னவென்றால், இந்த சாளரத்தால் திரும்பும் கோப்புகளின்
+ வரிசை குறிப்பாக வரிசையில் இல்லை
+  என்று நீங்கள் பார்க்கிறீர்கள். முதலில், விண்டோஸ் கவனம் செலுத்தும் 
+கோப்பை அனுப்புகிறது (அதாவது இது ஒரு சிறிய புள்ளியிடப்பட்ட எல்லையைக் 
+கொண்டுள்ளது, இது பொதுவாக நீங்கள் தேர்ந்தெடுத்த கடைசி கோப்பு). பின்னர் 
+அது அனுப்புகிறது
+  அதைத் தொடர்ந்து வரும் அனைத்து கோப்புகளும். அது முடிவை அடையும்போது, 
+மீதமுள்ள கோப்புகளை அனுப்ப மேலே குதிக்கிறது. </p>
+<p>ஆயிரக்கணக்கான கோப்புகளைச் சேர்க்க முயற்சிக்கும்போது சில வேக 
+சிக்கல்களும் இருக்கலாம். நிரலுக்கு கோப்பு பெயர்களை அனுப்ப சாளரம் ஒரு 
+நித்தியத்தை எடுக்கலாம். இந்த என்றால்
+  வழக்கு,  <a href="#addfolders"> "கோப்புறைகளைச் சேர்" </a> அதற்கு பதிலாக </p>
+<h2 id="addfolders">"கோப்புறைகளைச் சேர்" பொத்தான் </h2>
+<p>நீங்கள் கிளிக் செய்யும் போது  <img src="img/addfolders.png" alt="கோப்புறைகளைச் சேர்க்கவும்"> "கோப்புறைகளைச் சேர்" பொத்தான் ஒரு சாளரம் தோன்றும், ஒன்று அல்லது பல கோப்புறைகளைத் தேர்ந்தெடுக்க உங்களை அனுமதிக்கிறது.
+  இந்த சாளரம் பட்டியலில் கோப்புறைகளை சேர்க்க மட்டுமல்ல, அவற்றின் உள்ளடக்கத்தையும் சேர்க்க வடிவமைக்கப்பட்டுள்ளது. </p>
+<p>சாளரத்தின் அடிப்பகுதியில் உள்ள சில விருப்பங்கள் பட்டியலில் என்ன சேர்க்கப்பட வேண்டும் என்பதைக் குறிப்பிட அனுமதிக்கின்றன: <br><img src="img/addfilesoptions.png" alt="கோப்புகளைச் சேர்ப்பதற்கான விருப்பங்கள்"></p>
+<p>தேர்ந்தெடுக்கப்பட்ட கோப்புறை (களில்) உள்ள கோப்புகள் சேர்க்கப்பட 
+வேண்டுமா இல்லையா என்பதை முதலாவது குறிப்பிடுகிறது. தேர்ந்தெடுக்கப்பட்ட 
+கோப்புறை (கள்) சேர்க்கப்பட வேண்டுமா என்பதை இரண்டாவது குறிப்பிடுகிறது
+  அல்லது இல்லை. தேர்ந்தெடுக்கப்பட்ட கோப்புறை (களின்) துணை கோப்புறைகளும் 
+சேர்க்கப்பட வேண்டுமா என்பதை மூன்றாவது குறிப்பிடுகிறது (இது அனைத்து துணை 
+நிலைகளுக்கும் பொருந்தும், முதல் மட்டுமல்ல). </p>
+<p>தற்போது, இந்த சாளரம் நெட்வொர்க் உருப்படிகள் அல்லது அவற்றின் சொந்த 
+இயக்கி கடிதம் இல்லாத சிறப்பு சாதனங்களைக் காண்பிக்காது (டிரைவ் 
+கடிதத்துடன் வரைபடமாக்கப்பட்ட பிணைய இயக்கிகள்
+  பட்டியலில் காட்டப்படும்). எதிர்காலத்தில் இது மேம்படுத்தப்படலாம் 
+(குறைந்தபட்சம் பிணைய உருப்படிகளுக்கு). அதுவரை, ஒரு "நெட்வொர்க்" பொத்தான்
+ ஒரு இருந்து ஒரு கோப்புறையை தேர்வு செய்ய அனுமதிக்கிறது
+  நெட்வொர்க் இயக்ககம். இவற்றைச் சேர்க்க, இந்த சாளரத்தை  <a href="#dragdrop"> விட இழுத்தல் &amp; சொட்டு </a> எளிதாக இருக்கலாம். </p>
+<h2 id="dragdrop">கோப்புகளை இழுத்து விடுங்கள் </h2>
+<p>விண்டோஸ் எக்ஸ்ப்ளோரரிலிருந்து கோப்புகளை (மற்றும் அதனுடன் இணக்கமான பிற
+ நிரல், மொத்த தளபதி அல்லது ஊழியர் சாலமண்டர் போன்றவை) நேரடியாக இழுத்து 
+விடலாம்
+  எறும்பு ரெனாமரின் பிரதான சாளரம். "கோப்புகளைச் சேர்" சாளரத்தில் 
+கோப்புகளைத் தேர்ந்தெடுப்பதை விட அவற்றைச் சேர்க்க இது பொதுவாக மிகவும் 
+எளிதான வழியாகும். </p>
+<p>இயல்பாக, நீங்கள் கோப்புகளை கைவிடும்போது ஒரு சாளரம் தோன்றும். 
+கோப்புகளை எவ்வாறு சேர்க்க விரும்புகிறீர்கள் என்பதைத் தேர்வுசெய்ய இது 
+உங்களை அனுமதிக்கிறது. இந்த விருப்பங்கள் அவற்றை விட ஒரே மாதிரியானவை
+   <a href="#addfolders">"கோப்புறைகளைச் சேர்" சாளரத்தில் </a> 
+கிடைக்கிறது. "மீண்டும் கேட்காதே" என்று பெயரிடப்பட்ட ஒரு விருப்பம் 
+எதிர்கால இழுத்தல் &amp; சொட்டுக்கான தேர்ந்தெடுக்கப்பட்ட விருப்பங்களை 
+வைத்திருக்க அனுமதிக்கிறது,
+  எனவே சாளரம் மீண்டும் காட்டப்படாது. நீங்கள் இந்த விருப்பத்தை 
+சரிபார்த்து அதை நிராகரிக்க விரும்பினால் (அல்லது விருப்பங்களை மாற்றவும்),
+ நீங்கள் அதை "கோப்புகள் &amp; கோப்புறைகள்" பக்கத்தில் செய்யலாம்
+   <a href="options_en.html">விருப்பங்கள் சாளரத்தின் </a>
+ இந்த சாளரத்தை அதன் இயல்பான நடத்தையை மாற்றாமல் ஒரு முறை மீண்டும் கொண்டு 
+வர, கோப்புகளை கைவிடும்போது விசையை அழுத்திப் பிடிக்கலாம். இது 
+அனுமதிக்கிறது, எடுத்துக்காட்டாக,
+  பட்டியலில் ஒரு கோப்புறையைச் சேர்க்க, நீங்கள் தேர்ந்தெடுக்கும் 
+இயல்புநிலை நடத்தை கோப்புகளை மட்டுமே சேர்ப்பதாக இருக்கும். </p>
 <p>The same limitations than for the "Add files" window apply (files order and speed problems with lots of files).</p>
 </body>
 </html>
