@@ -6,29 +6,37 @@
 	<link rel="stylesheet" href="main.css" type="text/css" />
 </head>
 <body>
-<h1>Regular expressions</h1>
-<p>Ant Renamer uses the TRegExpr library. You can find a <a onclick="window.open(this.href);return false;"
-  href="https://regex.sorokin.engineer/en/latest/regular_expressions.html">syntax reference on the site dedicated to this library</a>. These expressions
-  are quite complex but also quite "standard", so I won't make here a detailed guide explaining how they work.</p>
-<p>For the "Regular expression" action, you have to provide two values:</p>
+<h1>வழக்கமான வெளிப்பாடுகள் </h1>
+<p>Ant Renamer TRegExpr நூலகத்தைப் பயன்படுத்துகிறது.  <a onclick="window.open(this.href);return false;" href="https://regex.sorokin.engineer/en/latest/regular_expressions.html">இந்த நூலகத்திற்கென அர்ப்பணிக்கப்பட்ட தளத்தில் ஒரு தொடரியல் குறிப்பை </a>
+ நீங்கள் காணலாம். இந்த வெளிப்பாடுகள்
+  மிகவும் சிக்கலானவை, ஆனால் மிகவும் "நிலையானவை", எனவே அவை எவ்வாறு 
+செயல்படுகின்றன என்பதை விளக்கும் விரிவான வழிகாட்டியை நான் இங்கே செய்ய 
+மாட்டேன். </p>
+<p>"வழக்கமான வெளிப்பாடு" செயலுக்கு, நீங்கள் இரண்டு மதிப்புகளை வழங்க வேண்டும்: </p>
 <ul>
-  <li>Expression, containing a valid regular expression;</li>
-  <li>New name, containing the new name of the file, with $<i>nn</i> backreferences (<i>nn</i> being a number) to indicate where found strings
-  have to be inserted. Note: these backreferences are presented with "\" instead of "$" on the syntax page mentionned above.</li>
+  <li>வெளிப்பாடு, சரியான வழக்கமான வெளிப்பாட்டைக் கொண்டுள்ளது; </li>
+  <li>புதிய பெயர், கோப்பின் புதிய பெயரைக் கொண்டுள்ளது, சரங்கள் <i> எங்கு காணப்படுகின்றன என்பதைக் குறிக்க $nn </i> பின்னடைவுகளுடன் ( <i>nn </i>
+ என்பது ஒரு எண்)
+  செருக வேண்டும். குறிப்பு: இந்த பின்னொட்டைகள் மேலே குறிப்பிட்டுள்ள 
+தொடரியல் பக்கத்தில் "$" க்கு பதிலாக "\" உடன் வழங்கப்படுகின்றன. </li>
 </ul>
-<p>Lots of non-alphanumeric characters have a special meaning in regular expressions. To use them, the escape character is the backslash ("\").
-  This also applies to the "$" sign that has a special meaning in the "new name" field. If you need to use the backslash as a character (e.g. as
-  path delimiter in the new name) you have to double it ("\\").</p>
-<h2>Examples</h2>
-<p>Swapping artist and title from mp3 file names:</p>
+<p>எண்ணெழுத்து அல்லாத பல எழுத்துக்கள் வழக்கமான வெளிப்பாடுகளில் ஒரு 
+சிறப்பு அர்த்தத்தைக் கொண்டுள்ளன. அவற்றைப் பயன்படுத்த, தப்பிக்கும் 
+பாத்திரம் பின்சாய்வு ("\") ஆகும்.
+  இது "புதிய பெயர்" புலத்தில் ஒரு சிறப்பு அர்த்தத்தைக் கொண்ட "$" 
+அடையாளத்திற்கும் பொருந்தும். நீங்கள் பேக்ஸ்லாஷை ஒரு கதாபாத்திரமாகப் 
+பயன்படுத்த வேண்டும் என்றால் (எ.கா.
+  புதிய பெயரில் பாதை வரையறை) நீங்கள் அதை இரட்டிப்பாக்க வேண்டும் ("\\"). </p>
+<h2>எடுத்துக்காட்டுகள் </h2>
+<p>MP3 கோப்பு பெயர்களிலிருந்து கலைஞர் மற்றும் தலைப்பை மாற்றுதல்: </p>
 <ul>
-  <li>Expression = <code>(.*) - (.*)\.mp3</code></li>
-  <li>New name = <code>$2 - $1.mp3</code></li>
+  <li>கோவை =  <code>(.*) - (.*)\.mp3</code></li>
+  <li>புதிய பெயர் =  <code>$2 - $1.mp3</code></li>
 </ul>
-<p>Extract episode number and title from series video files with episode number as S<i>nn</i>E<i>mm</i> followed by title:</p>
+<p>தொடர் வீடியோ கோப்புகளிலிருந்து எபிசோட் எண் மற்றும் தலைப்பை எஸ் என் இ எம் என்று எபிசோட் எண்ணுடன் <i>nn</i>E<i>mm</i> பிரித்தெடுக்கவும்: </p>
 <ul>
-  <li>Expression = <code>Code\.Quantum\.S([0-9]{2})E([0-9]{2})\.(.*)\.FRENCH.XViD\.avi</code></li>
-  <li>New name = <code>Code Quantum - $1$2 - $3.avi</code></li>
+  <li>கோவை =  <code>Code\.Quantum\.S([0-9]{2})E([0-9]{2})\.(.*)\.FRENCH.XViD\.avi</code></li>
+  <li>புதிய பெயர் =  <code>Code Quantum - $1$2 - $3.avi</code></li>
 </ul>`	
 </body>
 </html>
