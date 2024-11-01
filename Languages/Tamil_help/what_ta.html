@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//TA" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
   <title>எறும்பு மறுபெயரிடு 2 உதவி</title>
@@ -6,27 +6,43 @@
 	<link rel="stylesheet" href="main.css" type="text/css" />
 </head>
 <body>
-<h1>What the program does...</h1>
-<p>This program is designed to rename files. So it will only touch the files' names, it will not modify their contents.</p>
-<p>It was made for renaming, but in the <a href="options_en.html">Options</a> you can ask it to copy the files instead of renaming them.</p>
-<p>It can <a href="batch_en.html">store a predefined list of actions</a> to reuse them later.
-<p>It supports unicode, which means that you can rename files that have characters in Greek, Japanese, Chinese, Arab or any other language. Since most of the
-  programs have problems with such names, it can be useful to be able to rename them to Latin (basic ASCII) characters for example.</p>
-<h1>... and what it does not</h1>
-<p>As I said, it won't modify the contents of the files.</p>
-<p>It will not either modify files' date & time.</p>
-<p>It will not modify the ID3 (tag) contained in MP3s or EXIF from JPEG; it only read this info for building a new file name.</p>
-<p>It does not read any info from files other than MP3s (and for these it only reads the v1 of the ID3, not the v2) and JPEG.</p>
-<p>It cannot be fully controlled from command line, though it supports some <a href="params_en.html">parameters</a>.</p>
-<p>Note that the contents of this list is not fixed. Except modifying the contents of the files, all the "does not" things may appear in future versions.</p>
-<h2>Known bugs and limitations:</h2>
+<h1>நிரல் என்ன செய்கிறது... </h1>
+<p>இந்த நிரல் கோப்புகளுக்கு மறுபெயரிட வடிவமைக்கப்பட்டுள்ளது. எனவே இது 
+கோப்புகளின் பெயர்களை மட்டுமே தொடும், அவற்றின் உள்ளடக்கங்களை மாற்றாது. </p>
+<p>இது மறுபெயரிடுவதற்காக உருவாக்கப்பட்டது, ஆனால் விருப்பங்களில்  <a href="options_en.html">Options</a> கோப்புகளை மறுபெயரிடுவதற்கு பதிலாக நகலெடுக்கும்படி கேட்கலாம். </p>
+<p>இது  <a href="batch_en.html"> பின்னர் அவற்றை மீண்டும் பயன்படுத்த செயல்களின் முன் வரையறுக்கப்பட்ட பட்டியலை சேமிக்க </a> முடியும்  .
+ </p><p>இது யூனிகோடை ஆதரிக்கிறது, அதாவது கிரேக்கம், ஜப்பானிய, சீன, அரபு 
+அல்லது வேறு எந்த மொழியிலும் எழுத்துக்களைக் கொண்ட கோப்புகளை 
+மறுபெயரிடலாம். பெரும்பாலான என்பதால்
+  நிரல்களுக்கு அத்தகைய பெயர்களில் சிக்கல்கள் உள்ளன, எடுத்துக்காட்டாக 
+லத்தீன் (அடிப்படை ASCII) எழுத்துக்களுக்கு அவற்றை மறுபெயரிடுவது 
+பயனுள்ளதாக இருக்கும். </p>
+<h1>... அது என்ன செய்யாது </h1>
+<p>நான் சொன்னது போல், இது கோப்புகளின் உள்ளடக்கங்களை மாற்றாது. </p>
+<p>இது கோப்புகளின் தேதி மற்றும் நேரத்தை மாற்றாது. </p>
+<p>இது MP3s அல்லது EXIF இல் உள்ள ID3 (குறிச்சொல்) JPEG இலிருந்து 
+மாற்றாது; இது புதிய கோப்பு பெயரை உருவாக்க மட்டுமே இந்த தகவலை படிக்கும். </p>
+<p>இது MP3 களைத் தவிர வேறு கோப்புகளிலிருந்து எந்த தகவலையும் படிக்காது 
+(இவற்றுக்கு இது ID3 இன் v1 ஐ மட்டுமே படிக்கிறது, v2 அல்ல) மற்றும் JPEG. </p>
+<p> ஆதரித்தாலும், கட்டளை வரியிலிருந்து அதை முழுமையாகக் கட்டுப்படுத்த முடியாது <a href="params_en.html">இது சில அளவுருக்களை </a>. </p>
+<p>இந்த பட்டியலின் உள்ளடக்கங்கள் சரி செய்யப்படவில்லை என்பதை நினைவில் 
+கொள்க. கோப்புகளின் உள்ளடக்கங்களை மாற்றுவதைத் தவிர, அனைத்து "செய்யாத" 
+விஷயங்களும் எதிர்கால பதிப்புகளில் தோன்றக்கூடும். </p>
+<h2>அறியப்பட்ட பிழைகள் மற்றும் வரம்புகள்: </h2>
 <ul>
-  <li>Unicode is supported only on NT systems (Windows NT4, 2000, XP, Vista, 7 and higher).</li>
-  <li>Batch files cannot have unicode characters in their name and path.</li>
-  <li>Ditto for the folder where the program is located, and for the command-line when it is called with parameters.</li>
-  <li>Since version 2.04 the program does not start on some Windows 95 versions, it seems to be caused by a missing function on these system.</li>
-  <li>In the "Use date &amp; time" action, if you use a long date format (with day or month in letters, like "December" in English), it will fail for days
-    or months that have special characters in their name (like "Décembre" in French). This bug will be corrected some day, but I have to find how to do that.</li>
+  <li>NT கணினிகளில் (Windows NT4, 2000, XP, Vista, 7 மற்றும் அதற்கு மேற்பட்டவை) மட்டுமே யூனிகோட் ஆதரிக்கப்படுகிறது. </li>
+  <li>தொகுதிக் கோப்புகளில் யூனிகோட் எழுத்துக்குறிகள் அவற்றின் பெயர் மற்றும் பாதையில் இருக்க முடியாது. </li>
+  <li>நிரல் அமைந்துள்ள கோப்புறைக்கும், அளவுருக்களுடன் அழைக்கப்படும்போது கட்டளை வரிக்கும் இதேதான். </li>
+  <li>பதிப்பு 2.04 இலிருந்து நிரல் சில விண்டோஸ் 95 பதிப்புகளில் 
+தொடங்காது, இந்த கணினிகளில் காணாமல் போன செயல்பாடு காரணமாக இது 
+ஏற்பட்டதாகத் தெரிகிறது. </li>
+  <li>"தேதி &amp; நேரத்தைப் பயன்படுத்து" செயலில், நீங்கள் நீண்ட தேதி 
+வடிவமைப்பைப் பயன்படுத்தினால் (ஆங்கிலத்தில் "டிசம்பர்" போன்ற கடிதங்களில் 
+நாள் அல்லது மாதத்துடன்), அது நாட்களுக்கு தோல்வியடையும்
+    அல்லது அவற்றின் பெயரில் சிறப்பு எழுத்துக்களைக் கொண்ட மாதங்கள் 
+(பிரெஞ்சு மொழியில் "Décembre" போன்றவை). இந்த பிழை ஒரு நாள் 
+சரிசெய்யப்படும், ஆனால் அதை எப்படி செய்வது என்று நான் கண்டுபிடிக்க 
+வேண்டும். </li>
 </ul>
 </body>
 </html>
